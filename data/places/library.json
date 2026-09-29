@@ -4519,5 +4519,82 @@
     "address": "100 Boone Street, North Kingstown, Rhode Island, 02852",
     "gmaps_link": "https://maps.google.com/?q=41.5702273,-71.4559380",
     "added_by": "yakew7"
+  },
+  {
+    "id": "nutley-library-01",
+    "name": "Nutley Public Library",
+    "type": "library",
+    "city": "nutley",
+    "lat": 40.8171934,
+    "lng": -74.1587735,
+    "address": "93 Booth Drive, Nutley, New Jersey, 07110",
+    "gmaps_link": "https://maps.google.com/?q=40.8171934,-74.1587735",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ocean_city-library-01",
+    "name": "Ocean City Free Public Library",
+    "type": "library",
+    "city": "ocean_city",
+    "lat": 39.2713679,
+    "lng": -74.5902675,
+    "address": "1735 Simpson Avenue, Ocean City, New Jersey, 08226",
+    "gmaps_link": "https://maps.google.com/?q=39.2713679,-74.5902675",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "parkton-library-01",
+    "name": "Baltimore County Public Library, Hereford Branch",
+    "type": "library",
+    "city": "parkton",
+    "lat": 39.5897827,
+    "lng": -76.6637949,
+    "address": "16940 York Road, Parkton, Maryland, 21111",
+    "gmaps_link": "https://maps.google.com/?q=39.5897827,-76.6637949",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "paulsboro-library-01",
+    "name": "Gill Memorial Library",
+    "type": "library",
+    "city": "paulsboro",
+    "lat": 39.8266921,
+    "lng": -75.273421,
+    "address": "145 East Broad Street, Paulsboro, New Jersey, 08066",
+    "gmaps_link": "https://maps.google.com/?q=39.8266921,-75.2734210",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "pennsauken-library-01",
+    "name": "Pennsauken Free Public Library",
+    "type": "library",
+    "city": "pennsauken",
+    "lat": 39.957361,
+    "lng": -75.058858,
+    "address": "2400 Merchantville Avenue, Pennsauken, New Jersey, 08110",
+    "gmaps_link": "https://maps.google.com/?q=39.9573610,-75.0588580",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "piscataway-library-01",
+    "name": "Piscataway John F. Kennedy Memorial Library",
+    "type": "library",
+    "city": "piscataway",
+    "lat": 40.5366589,
+    "lng": -74.4714095,
+    "address": "500 Hoes Lane, Piscataway, New Jersey, 08854",
+    "gmaps_link": "https://maps.google.com/?q=40.5366589,-74.4714095",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "plymouth-library-01",
+    "name": "Plymouth Public Library",
+    "type": "library",
+    "city": "plymouth",
+    "lat": 41.240312,
+    "lng": -75.9467791,
+    "address": "107 West Main Street, Plymouth, Pennsylvania, 18651",
+    "gmaps_link": "https://maps.google.com/?q=41.2403120,-75.9467791",
+    "added_by": "yakew7"
   }
 ]

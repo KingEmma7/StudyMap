@@ -4332,5 +4332,38 @@
     "address": "204 Maple Avenue, New Windsor, Maryland, 21776",
     "gmaps_link": "https://maps.google.com/?q=39.5415489,-77.1065179",
     "added_by": "yakew7"
+  },
+  {
+    "id": "old_tappan-gov_offices-01",
+    "name": "Old Tappan Borough Hall",
+    "type": "gov_offices",
+    "city": "old_tappan",
+    "lat": 41.012935,
+    "lng": -73.984207,
+    "address": "227 Old Tappan Road, Old Tappan, New Jersey, 07675",
+    "gmaps_link": "https://maps.google.com/?q=41.0129350,-73.9842070",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "plains-gov_offices-01",
+    "name": "Plains Township Municipal Building",
+    "type": "gov_offices",
+    "city": "plains",
+    "lat": 41.2775735,
+    "lng": -75.8490228,
+    "address": "126 North Main Street, Plains, Pennsylvania, 18705",
+    "gmaps_link": "https://maps.google.com/?q=41.2775735,-75.8490228",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "pocono_summit-gov_offices-01",
+    "name": "Pocono Summit Post Office (USPS)",
+    "type": "gov_offices",
+    "city": "pocono_summit",
+    "lat": 41.1090984,
+    "lng": -75.4042337,
+    "address": "2657 Route 940, Pocono Summit, Pennsylvania, 18346",
+    "gmaps_link": "https://maps.google.com/?q=41.1090984,-75.4042337",
+    "added_by": "yakew7"
   }
 ]
