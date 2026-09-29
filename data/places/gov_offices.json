@@ -4398,5 +4398,82 @@
     "address": "188 Lincoln Highway, Fairless Hills, Pennsylvania, 19030",
     "gmaps_link": "https://maps.google.com/?q=40.1822611,-74.8597518",
     "added_by": "yakew7"
+  },
+  {
+    "id": "islip_terrace-gov_offices-01",
+    "name": "Islip Terrace Post Office (USPS)",
+    "type": "gov_offices",
+    "city": "islip_terrace",
+    "lat": 40.744688,
+    "lng": -73.1936302,
+    "address": "136 Carleton Avenue, Islip Terrace, New York, 11752",
+    "gmaps_link": "https://maps.google.com/?q=40.7446880,-73.1936302",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "wall-gov_offices-01",
+    "name": "Wall Township Municipal Building",
+    "type": "gov_offices",
+    "city": "wall",
+    "lat": 40.1534863,
+    "lng": -74.0713334,
+    "address": "2700 Allaire Road, Wall, New Jersey, 07719",
+    "gmaps_link": "https://maps.google.com/?q=40.1534863,-74.0713334",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "elliottsburg-gov_offices-01",
+    "name": "Elliottsburg Post Office (USPS)",
+    "type": "gov_offices",
+    "city": "elliottsburg",
+    "lat": 40.3889725,
+    "lng": -77.288874,
+    "address": "50 Veterans Way, Elliottsburg, Pennsylvania, 17024",
+    "gmaps_link": "https://maps.google.com/?q=40.3889725,-77.2888740",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "yatesville-gov_offices-01",
+    "name": "Yatesville Multi-Purpose Building (Borough Hall)",
+    "type": "gov_offices",
+    "city": "yatesville",
+    "lat": 41.3053209,
+    "lng": -75.7830051,
+    "address": "33 Pittston Avenue, Yatesville, Pennsylvania, 18640",
+    "gmaps_link": "https://maps.google.com/?q=41.3053209,-75.7830051",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "brattleboro-gov_offices-01",
+    "name": "Brattleboro Municipal Center (Town Offices)",
+    "type": "gov_offices",
+    "city": "brattleboro",
+    "lat": 42.8549807,
+    "lng": -72.5593661,
+    "address": "230 Main Street, Brattleboro, Vermont, 05301",
+    "gmaps_link": "https://maps.google.com/?q=42.8549807,-72.5593661",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "east_hanover-gov_offices-01",
+    "name": "East Hanover Township Municipal Building",
+    "type": "gov_offices",
+    "city": "east_hanover",
+    "lat": 40.825564,
+    "lng": -74.3610361,
+    "address": "411 Ridgedale Avenue, East Hanover, New Jersey, 07936",
+    "gmaps_link": "https://maps.google.com/?q=40.8255640,-74.3610361",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "montville-gov_offices-01",
+    "name": "Montville Township Municipal Building",
+    "type": "gov_offices",
+    "city": "montville",
+    "lat": 40.8830408,
+    "lng": -74.3655718,
+    "address": "195 Changebridge Road, Montville, New Jersey, 07045",
+    "gmaps_link": "https://maps.google.com/?q=40.8830408,-74.3655718",
+    "added_by": "yakew7"
   }
 ]

@@ -4673,5 +4673,38 @@
     "address": "255 Main Street, Southington, Connecticut, 06489",
     "gmaps_link": "https://maps.google.com/?q=41.5958045,-72.8777262",
     "added_by": "yakew7"
+  },
+  {
+    "id": "washington_twp-library-01",
+    "name": "Township of Washington Public Library",
+    "type": "library",
+    "city": "washington_twp",
+    "lat": 40.986888,
+    "lng": -74.061694,
+    "address": "144 Woodfield Road, Township of Washington, New Jersey, 07676",
+    "gmaps_link": "https://maps.google.com/?q=40.9868880,-74.0616940",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "whippany-library-01",
+    "name": "Whippanong Library (Hanover Township Free Public Library)",
+    "type": "library",
+    "city": "whippany",
+    "lat": 40.8306107,
+    "lng": -74.4336622,
+    "address": "1000 Route 10, Whippany, New Jersey, 07981",
+    "gmaps_link": "https://maps.google.com/?q=40.8306107,-74.4336622",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "wilbraham-library-01",
+    "name": "Wilbraham Public Library",
+    "type": "library",
+    "city": "wilbraham",
+    "lat": 42.1218536,
+    "lng": -72.4286251,
+    "address": "25 Crane Park Drive, Wilbraham, Massachusetts, 01095",
+    "gmaps_link": "https://maps.google.com/?q=42.1218536,-72.4286251",
+    "added_by": "yakew7"
   }
 ]
