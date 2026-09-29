@@ -4255,5 +4255,93 @@
     "address": "405 Pine Street, Manchester, New Hampshire, 03104",
     "gmaps_link": "https://maps.google.com/?q=42.9922901,-71.4588697",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "bohemia-library-01",
+    "name": "Connetquot Public Library",
+    "type": "library",
+    "city": "bohemia",
+    "lat": 40.7587639,
+    "lng": -73.1178753,
+    "address": "760 Ocean Avenue, Bohemia, New York, 11716",
+    "gmaps_link": "https://maps.google.com/?q=40.7587639,-73.1178753",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "brattleboro-library-01",
+    "name": "Brooks Memorial Library",
+    "type": "library",
+    "city": "brattleboro",
+    "lat": 42.8552926,
+    "lng": -72.559936,
+    "address": "224 Main Street, Brattleboro, Vermont, 05301",
+    "gmaps_link": "https://maps.google.com/?q=42.8552926,-72.5599360",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "buena-library-01",
+    "name": "Buena Community Reading Center (Atlantic County Library System)",
+    "type": "library",
+    "city": "buena",
+    "lat": 39.5379871,
+    "lng": -74.9134101,
+    "address": "125 Weymouth Road, Buena, New Jersey, 08310",
+    "gmaps_link": "https://maps.google.com/?q=39.5379871,-74.9134101",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "east_greenwich-library-01",
+    "name": "East Greenwich Free Library",
+    "type": "library",
+    "city": "east_greenwich",
+    "lat": 41.6613919,
+    "lng": -71.4507779,
+    "address": "82 Peirce Street, East Greenwich, Rhode Island, 02818",
+    "gmaps_link": "https://maps.google.com/?q=41.6613919,-71.4507779",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "east_hanover-library-01",
+    "name": "East Hanover Public Library",
+    "type": "library",
+    "city": "east_hanover",
+    "lat": 40.825742,
+    "lng": -74.360775,
+    "address": "415 Ridgedale Avenue, East Hanover, New Jersey, 07936",
+    "gmaps_link": "https://maps.google.com/?q=40.8257420,-74.3607750",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "east_lyme-library-01",
+    "name": "East Lyme Public Library",
+    "type": "library",
+    "city": "east_lyme",
+    "lat": 41.349052,
+    "lng": -72.2163174,
+    "address": "39 Society Road, Niantic, Connecticut, 06357",
+    "gmaps_link": "https://maps.google.com/?q=41.3490520,-72.2163174",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "east_providence-library-01",
+    "name": "Weaver Memorial Library (East Providence Public Library)",
+    "type": "library",
+    "city": "east_providence",
+    "lat": 41.818504,
+    "lng": -71.3753549,
+    "address": "41 Grove Avenue, East Providence, Rhode Island, 02914",
+    "gmaps_link": "https://maps.google.com/?q=41.8185040,-71.3753549",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "egg_harbor_township-library-01",
+    "name": "Egg Harbor Township Branch, Atlantic County Library System",
+    "type": "library",
+    "city": "egg_harbor_township",
+    "lat": 39.371819,
+    "lng": -74.625194,
+    "address": "1 Swift Drive, Egg Harbor Township, New Jersey, 08234",
+    "gmaps_link": "https://maps.google.com/?q=39.3718190,-74.6251940",
+    "added_by": "yakew7"
   }
 ]
