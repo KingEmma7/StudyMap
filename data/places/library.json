@@ -5190,5 +5190,49 @@
     "address": "17 Harry Chan Avenue, Darwin City, Northern Territory, 0800, Australia",
     "gmaps_link": "https://maps.google.com/?q=-12.4647951,130.8456605",
     "added_by": "yakew7"
+  },
+  {
+    "id": "bradford-library-01",
+    "name": "Bradford Central Library",
+    "type": "library",
+    "city": "bradford",
+    "lat": 53.7928385,
+    "lng": -1.7533498,
+    "address": "Centenary Square, Bradford, BD1 1JN, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=53.7928385,-1.7533498",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "nsk-library-01",
+    "name": "Sarvajanik Vachanalaya (Nashik Public Library)",
+    "type": "library",
+    "city": "nashik",
+    "lat": 20.0047687,
+    "lng": 73.7871361,
+    "address": "Tilak Road, Nashik, Maharashtra, 422001",
+    "gmaps_link": "https://maps.google.com/?q=20.0047687,73.7871361",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "sou-library-01",
+    "name": "Southport Library (The Atkinson)",
+    "type": "library",
+    "city": "southport",
+    "lat": 53.6470294,
+    "lng": -3.0059088,
+    "address": "Lord Street, Southport, PR8 1DB, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=53.6470294,-3.0059088",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lima-library-01",
+    "name": "Biblioteca Nacional del Peru",
+    "type": "library",
+    "city": "lima",
+    "lat": -12.0877743,
+    "lng": -77.005129,
+    "address": "Avenida De la Poesia 160, San Borja, Lima, 15021, Peru",
+    "gmaps_link": "https://maps.google.com/?q=-12.0877743,-77.0051290",
+    "added_by": "yakew7"
   }
 ]

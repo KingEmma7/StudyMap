@@ -4651,5 +4651,71 @@
     "address": "1841 Argyle Street, Halifax, Nova Scotia, B3J 3A5",
     "gmaps_link": "https://maps.google.com/?q=44.6489172,-63.5753207",
     "added_by": "yakew7"
+  },
+  {
+    "id": "mty-gov_offices-01",
+    "name": "Palacio Municipal de Monterrey",
+    "type": "gov_offices",
+    "city": "monterrey",
+    "lat": 25.6647487,
+    "lng": -100.3110209,
+    "address": "Ciclovia Macroplaza, Centro, 64000 Monterrey, Nuevo Leon, Mexico",
+    "gmaps_link": "https://maps.google.com/?q=25.6647487,-100.3110209",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "xiamen-gov_offices-01",
+    "name": "Xiamen Exit-Entry Administration Bureau",
+    "type": "gov_offices",
+    "city": "xiamen",
+    "lat": 24.4543328,
+    "lng": 118.0812805,
+    "address": "No. 64 Zhenhai Road, Siming District, Xiamen, Fujian, 361003, China",
+    "gmaps_link": "https://maps.google.com/?q=24.4543328,118.0812805",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "sal-gov_offices-01",
+    "name": "Salisbury Guildhall",
+    "type": "gov_offices",
+    "city": "salisbury",
+    "lat": 51.0695731,
+    "lng": -1.7965839,
+    "address": "Market Place, Salisbury, SP1 1TL, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=51.0695731,-1.7965839",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "wmt-gov_offices-01",
+    "name": "Westmount City Hall (Hotel de Ville de Westmount)",
+    "type": "gov_offices",
+    "city": "westmount",
+    "lat": 45.4855772,
+    "lng": -73.5967204,
+    "address": "4333 Rue Sherbrooke Ouest, Westmount, Quebec, H3Y 2H7",
+    "gmaps_link": "https://maps.google.com/?q=45.4855772,-73.5967204",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "cambridge-gov_offices-01",
+    "name": "Cambridge Guildhall (Cambridge City Council)",
+    "type": "gov_offices",
+    "city": "cambridge",
+    "lat": 52.2047652,
+    "lng": 0.1193132,
+    "address": "Market Square, Cambridge, CB2 3QJ, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=52.2047652,0.1193132",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "manchester_nh-gov_offices-01",
+    "name": "Manchester City Hall",
+    "type": "gov_offices",
+    "city": "manchester_nh",
+    "lat": 42.9911654,
+    "lng": -71.4638746,
+    "address": "1 City Hall Plaza, Manchester, New Hampshire, 03101",
+    "gmaps_link": "https://maps.google.com/?q=42.9911654,-71.4638746",
+    "added_by": "yakew7"
   }
 ]
