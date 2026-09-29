@@ -4706,5 +4706,82 @@
     "address": "25 Crane Park Drive, Wilbraham, Massachusetts, 01095",
     "gmaps_link": "https://maps.google.com/?q=42.1218536,-72.4286251",
     "added_by": "yakew7"
+  },
+  {
+    "id": "tll-library-01",
+    "name": "Tallinn Central Library (Tallinna Keskraamatukogu)",
+    "type": "library",
+    "city": "tallinn",
+    "lat": 59.4331438,
+    "lng": 24.7475846,
+    "address": "Estonia pst 8, 10148 Tallinn, Estonia",
+    "gmaps_link": "https://maps.google.com/?q=59.4331438,24.7475846",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "rig-library-01",
+    "name": "National Library of Latvia",
+    "type": "library",
+    "city": "riga",
+    "lat": 56.9410379,
+    "lng": 24.0967724,
+    "address": "Mukusalas iela 3, LV-1048 Riga, Latvia",
+    "gmaps_link": "https://maps.google.com/?q=56.9410379,24.0967724",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "vno-library-01",
+    "name": "Martynas Mazvydas National Library of Lithuania",
+    "type": "library",
+    "city": "vilnius",
+    "lat": 54.6911358,
+    "lng": 25.2636938,
+    "address": "Gedimino pr. 51, 01109 Vilnius, Lithuania",
+    "gmaps_link": "https://maps.google.com/?q=54.6911358,25.2636938",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "glasgow-library-01",
+    "name": "The Mitchell Library",
+    "type": "library",
+    "city": "glasgow",
+    "lat": 55.8650238,
+    "lng": -4.2726801,
+    "address": "North Street, Glasgow, G3 7DN, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=55.8650238,-4.2726801",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "sheffield-library-01",
+    "name": "Sheffield Central Library",
+    "type": "library",
+    "city": "sheffield",
+    "lat": 53.3800126,
+    "lng": -1.4672618,
+    "address": "Surrey Street, Sheffield, S1 1XZ, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=53.3800126,-1.4672618",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "liverpool-library-01",
+    "name": "Liverpool Central Library",
+    "type": "library",
+    "city": "liverpool",
+    "lat": 53.409906,
+    "lng": -2.9806463,
+    "address": "William Brown Street, Liverpool, L3 8EN, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=53.4099060,-2.9806463",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "phoenix-library-01",
+    "name": "Burton Barr Central Library",
+    "type": "library",
+    "city": "phoenix",
+    "lat": 33.4624422,
+    "lng": -112.0731695,
+    "address": "1221 North Central Avenue, Phoenix, Arizona, 85004",
+    "gmaps_link": "https://maps.google.com/?q=33.4624422,-112.0731695",
+    "added_by": "yakew7"
   }
 ]

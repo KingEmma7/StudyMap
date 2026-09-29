@@ -4585,5 +4585,38 @@
     "address": "Old Market Square, Nottingham, NG1 2DT, United Kingdom",
     "gmaps_link": "https://maps.google.com/?q=52.9534236,-1.1486107",
     "added_by": "yakew7"
+  },
+  {
+    "id": "rochester-gov_offices-01",
+    "name": "Rochester City Hall",
+    "type": "gov_offices",
+    "city": "rochester",
+    "lat": 43.157006,
+    "lng": -77.6148973,
+    "address": "30 Church Street, Rochester, New York, 14614",
+    "gmaps_link": "https://maps.google.com/?q=43.1570060,-77.6148973",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "spokane-gov_offices-01",
+    "name": "Spokane City Hall",
+    "type": "gov_offices",
+    "city": "spokane",
+    "lat": 47.6605613,
+    "lng": -117.4241938,
+    "address": "808 West Spokane Falls Boulevard, Spokane, Washington, 99201",
+    "gmaps_link": "https://maps.google.com/?q=47.6605613,-117.4241938",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "tacoma-gov_offices-01",
+    "name": "Tacoma Municipal Building",
+    "type": "gov_offices",
+    "city": "tacoma",
+    "lat": 47.2558102,
+    "lng": -122.4417274,
+    "address": "747 Market Street, Tacoma, Washington, 98402",
+    "gmaps_link": "https://maps.google.com/?q=47.2558102,-122.4417274",
+    "added_by": "yakew7"
   }
 ]
