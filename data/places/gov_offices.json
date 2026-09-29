@@ -4794,5 +4794,93 @@
     "address": "Jockel-Fuchs-Platz 1, 55116 Mainz, Germany",
     "gmaps_link": "https://maps.google.com/?q=50.0009065,8.2768566",
     "added_by": "yakew7"
+  },
+  {
+    "id": "depok-gov_offices-01",
+    "name": "Balai Kota Depok (Depok City Hall)",
+    "type": "gov_offices",
+    "city": "depok",
+    "lat": -6.3942215,
+    "lng": 106.821797,
+    "address": "Jalan Margonda Raya, Depok, Jawa Barat, Indonesia",
+    "gmaps_link": "https://maps.google.com/?q=-6.3942215,106.8217970",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bgy-gov_offices-01",
+    "name": "Palazzo degli Uffici Comunali (Comune di Bergamo)",
+    "type": "gov_offices",
+    "city": "bergamo",
+    "lat": 45.6941205,
+    "lng": 9.6696195,
+    "address": "Piazza Giacomo Matteotti 3, 24122 Bergamo, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.6941205,9.6696195",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bh-gov_offices-01",
+    "name": "Prefeitura de Belo Horizonte",
+    "type": "gov_offices",
+    "city": "belo_horizonte",
+    "lat": -19.9236999,
+    "lng": -43.9363439,
+    "address": "Avenida Afonso Pena 1212, Centro, Belo Horizonte, Minas Gerais, 31190-000, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-19.9236999,-43.9363439",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "diy-gov_offices-01",
+    "name": "Diyarbakir Valiligi (Diyarbakir Governorship)",
+    "type": "gov_offices",
+    "city": "diyarbakir",
+    "lat": 37.9171135,
+    "lng": 40.2283617,
+    "address": "Lise Caddesi, Yenisehir Mahallesi, Diyarbakir, 21100, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=37.9171135,40.2283617",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "pcb-gov_offices-01",
+    "name": "Prefeitura de Piracicaba (municipal service complex)",
+    "type": "gov_offices",
+    "city": "piracicaba",
+    "lat": -22.7323505,
+    "lng": -47.6371295,
+    "address": "Rua XV de Novembro 2200, Cidade Alta, Piracicaba, Sao Paulo, 13417-100, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-22.7323505,-47.6371295",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "vlh-gov_offices-01",
+    "name": "Prefeitura de Valinhos",
+    "type": "gov_offices",
+    "city": "valinhos",
+    "lat": -22.9704745,
+    "lng": -46.9948039,
+    "address": "Rua Antonio Carlos, Vila Clayton, Valinhos, Sao Paulo, 13270-060, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-22.9704745,-46.9948039",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "vnh-gov_offices-01",
+    "name": "Prefeitura de Vinhedo",
+    "type": "gov_offices",
+    "city": "vinhedo",
+    "lat": -23.0307611,
+    "lng": -46.9748833,
+    "address": "Rua Joao Corazzari 394, Centro, Vinhedo, Sao Paulo, 13280-093, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-23.0307611,-46.9748833",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "konak-gov_offices-01",
+    "name": "Konak Belediyesi (Konak Municipality)",
+    "type": "gov_offices",
+    "city": "konak",
+    "lat": 38.400762,
+    "lng": 27.1294103,
+    "address": "Eski Izmir Caddesi, Gunesli Mahallesi, Konak, Izmir, 35270, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=38.4007620,27.1294103",
+    "added_by": "yakew7"
   }
 ]

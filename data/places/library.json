@@ -5267,5 +5267,27 @@
     "address": "Castle Gates, Shrewsbury, SY1 2AD, United Kingdom",
     "gmaps_link": "https://maps.google.com/?q=52.7107118,-2.7506275",
     "added_by": "yakew7"
+  },
+  {
+    "id": "qmg-library-01",
+    "name": "Kingston Frontenac Public Library, Central Branch",
+    "type": "library",
+    "city": "kingston",
+    "lat": 44.229714,
+    "lng": -76.484804,
+    "address": "130 Johnson Street, Kingston, Ontario, K7L 1X8",
+    "gmaps_link": "https://maps.google.com/?q=44.2297140,-76.4848040",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "blk-library-01",
+    "name": "Balikesir Il Halk Kutuphanesi (Balikesir Provincial Public Library)",
+    "type": "library",
+    "city": "balikesir",
+    "lat": 39.640305,
+    "lng": 27.8803575,
+    "address": "Soma Caddesi, Kasaplar Mahallesi, Altieylul, Balikesir, 10100, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=39.6403050,27.8803575",
+    "added_by": "yakew7"
   }
 ]
