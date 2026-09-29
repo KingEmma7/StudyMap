@@ -4288,5 +4288,38 @@
     "address": "988 North Main Street, Dayville, Connecticut, 06241",
     "gmaps_link": "https://maps.google.com/?q=41.8328783,-71.8766822",
     "added_by": "yakew7"
+  },
+  {
+    "id": "gambrills-gov_offices-01",
+    "name": "Gambrills Post Office (USPS)",
+    "type": "gov_offices",
+    "city": "gambrills",
+    "lat": 39.0682379,
+    "lng": -76.6690262,
+    "address": "388 Gambrills Road, Gambrills, Maryland, 21054",
+    "gmaps_link": "https://maps.google.com/?q=39.0682379,-76.6690262",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "glen_gardner-gov_offices-01",
+    "name": "Glen Gardner Borough Hall",
+    "type": "gov_offices",
+    "city": "glen_gardner",
+    "lat": 40.6954311,
+    "lng": -74.9401788,
+    "address": "83 Main Street, Glen Gardner, New Jersey, 08826",
+    "gmaps_link": "https://maps.google.com/?q=40.6954311,-74.9401788",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "linwood-gov_offices-01",
+    "name": "City of Linwood, City Hall",
+    "type": "gov_offices",
+    "city": "linwood",
+    "lat": 39.353533,
+    "lng": -74.57411,
+    "address": "400 Poplar Avenue, Linwood, New Jersey, 08221",
+    "gmaps_link": "https://maps.google.com/?q=39.3535330,-74.5741100",
+    "added_by": "yakew7"
   }
 ]

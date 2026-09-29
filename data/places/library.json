@@ -4343,5 +4343,82 @@
     "address": "1 Swift Drive, Egg Harbor Township, New Jersey, 08234",
     "gmaps_link": "https://maps.google.com/?q=39.3718190,-74.6251940",
     "added_by": "yakew7"
+  },
+  {
+    "id": "eldersburg-library-01",
+    "name": "Carroll County Public Library, Eldersburg Branch",
+    "type": "library",
+    "city": "eldersburg",
+    "lat": 39.399703,
+    "lng": -76.935765,
+    "address": "6400 W Hemlock Drive, Eldersburg, Maryland, 21784",
+    "gmaps_link": "https://maps.google.com/?q=39.3997030,-76.9357650",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "federalsburg-library-01",
+    "name": "Caroline County Public Library, Federalsburg Branch",
+    "type": "library",
+    "city": "federalsburg",
+    "lat": 38.6949311,
+    "lng": -75.7762785,
+    "address": "123 Morris Avenue, Federalsburg, Maryland, 21632",
+    "gmaps_link": "https://maps.google.com/?q=38.6949311,-75.7762785",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "hewlett-library-01",
+    "name": "Hewlett-Woodmere Public Library",
+    "type": "library",
+    "city": "hewlett",
+    "lat": 40.632891,
+    "lng": -73.701734,
+    "address": "1125 Broadway, Hewlett, New York, 11557",
+    "gmaps_link": "https://maps.google.com/?q=40.6328910,-73.7017340",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lehighton-library-01",
+    "name": "Lehighton Area Memorial Library",
+    "type": "library",
+    "city": "lehighton",
+    "lat": 40.8348491,
+    "lng": -75.7094851,
+    "address": "124 North Street, Lehighton, Pennsylvania, 18235",
+    "gmaps_link": "https://maps.google.com/?q=40.8348491,-75.7094851",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "little_egg_harbor-library-01",
+    "name": "Ocean County Library, Little Egg Harbor Branch",
+    "type": "library",
+    "city": "little_egg_harbor",
+    "lat": 39.5858743,
+    "lng": -74.3749929,
+    "address": "290 Mathistown Road, Little Egg Harbor Township, New Jersey, 08087",
+    "gmaps_link": "https://maps.google.com/?q=39.5858743,-74.3749929",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "maple_shade-library-01",
+    "name": "Burlington County Library System, Maple Shade Branch",
+    "type": "library",
+    "city": "maple_shade",
+    "lat": 39.959799,
+    "lng": -74.99615,
+    "address": "200 Stiles Avenue, Maple Shade, New Jersey, 08052",
+    "gmaps_link": "https://maps.google.com/?q=39.9597990,-74.9961500",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "marlton-library-01",
+    "name": "Burlington County Library System, Evesham Branch",
+    "type": "library",
+    "city": "marlton",
+    "lat": 39.8832173,
+    "lng": -74.8772413,
+    "address": "984 Tuckerton Road, Marlton, New Jersey, 08053",
+    "gmaps_link": "https://maps.google.com/?q=39.8832173,-74.8772413",
+    "added_by": "yakew7"
   }
 ]
