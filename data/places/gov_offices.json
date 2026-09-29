@@ -4475,5 +4475,115 @@
     "address": "195 Changebridge Road, Montville, New Jersey, 07045",
     "gmaps_link": "https://maps.google.com/?q=40.8830408,-74.3655718",
     "added_by": "yakew7"
+  },
+  {
+    "id": "jakarta-gov_offices-01",
+    "name": "Kantor Imigrasi Kelas I Khusus Jakarta Selatan (South Jakarta Immigration Office)",
+    "type": "gov_offices",
+    "city": "jakarta",
+    "lat": -6.2565201,
+    "lng": 106.8275343,
+    "address": "Jalan Mampang Prapatan XVI, Duren Tiga, Pancoran, Jakarta Selatan, 12790",
+    "gmaps_link": "https://maps.google.com/?q=-6.2565201,106.8275343",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "hki-gov_offices-01",
+    "name": "Finnish Immigration Service (Migri), Helsinki Service Point",
+    "type": "gov_offices",
+    "city": "helsinki",
+    "lat": 60.2531569,
+    "lng": 25.0118921,
+    "address": "Kaupparaitti 10, 00700 Helsinki, Finland",
+    "gmaps_link": "https://maps.google.com/?q=60.2531569,25.0118921",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "wva-gov_offices-01",
+    "name": "West Vancouver Municipal Hall",
+    "type": "gov_offices",
+    "city": "west_vancouver",
+    "lat": 49.3311672,
+    "lng": -123.1597681,
+    "address": "750 17th Street, West Vancouver, British Columbia, V7V 3T3",
+    "gmaps_link": "https://maps.google.com/?q=49.3311672,-123.1597681",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "miami-gov_offices-01",
+    "name": "Miami City Hall",
+    "type": "gov_offices",
+    "city": "miami",
+    "lat": 25.7277552,
+    "lng": -80.233811,
+    "address": "3500 Pan American Drive, Miami, Florida, 33133",
+    "gmaps_link": "https://maps.google.com/?q=25.7277552,-80.2338110",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "kansas_city-gov_offices-01",
+    "name": "Kansas City City Hall",
+    "type": "gov_offices",
+    "city": "kansas_city",
+    "lat": 39.1006011,
+    "lng": -94.5779159,
+    "address": "414 East 12th Street, Kansas City, Missouri, 64106",
+    "gmaps_link": "https://maps.google.com/?q=39.1006011,-94.5779159",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "akron-gov_offices-01",
+    "name": "City of Akron Municipal Building",
+    "type": "gov_offices",
+    "city": "akron",
+    "lat": 41.0806008,
+    "lng": -81.5181919,
+    "address": "166 South High Street, Akron, Ohio, 44308",
+    "gmaps_link": "https://maps.google.com/?q=41.0806008,-81.5181919",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "dayton-gov_offices-01",
+    "name": "City of Dayton, City Hall",
+    "type": "gov_offices",
+    "city": "dayton",
+    "lat": 39.7595599,
+    "lng": -84.1940134,
+    "address": "101 West 3rd Street, Dayton, Ohio, 45402",
+    "gmaps_link": "https://maps.google.com/?q=39.7595599,-84.1940134",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "honolulu-gov_offices-01",
+    "name": "Honolulu Hale (Honolulu City Hall)",
+    "type": "gov_offices",
+    "city": "honolulu",
+    "lat": 21.3052679,
+    "lng": -157.8570082,
+    "address": "530 South King Street, Honolulu, Hawaii, 96813",
+    "gmaps_link": "https://maps.google.com/?q=21.3052679,-157.8570082",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "norwich-gov_offices-01",
+    "name": "Norwich City Hall",
+    "type": "gov_offices",
+    "city": "norwich",
+    "lat": 52.6286107,
+    "lng": 1.2916165,
+    "address": "St Peters Street, Norwich, Norfolk, NR2 1NH, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=52.6286107,1.2916165",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "nottingham-gov_offices-01",
+    "name": "Nottingham Council House",
+    "type": "gov_offices",
+    "city": "nottingham",
+    "lat": 52.9534236,
+    "lng": -1.1486107,
+    "address": "Old Market Square, Nottingham, NG1 2DT, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=52.9534236,-1.1486107",
+    "added_by": "yakew7"
   }
 ]
