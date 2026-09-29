@@ -4717,5 +4717,82 @@
     "address": "1 City Hall Plaza, Manchester, New Hampshire, 03101",
     "gmaps_link": "https://maps.google.com/?q=42.9911654,-71.4638746",
     "added_by": "yakew7"
+  },
+  {
+    "id": "ord-gov_offices-01",
+    "name": "Chicago City Hall",
+    "type": "gov_offices",
+    "city": "chicago",
+    "lat": 41.8838293,
+    "lng": -87.6319503,
+    "address": "121 North LaSalle Street, Chicago, Illinois, 60602",
+    "gmaps_link": "https://maps.google.com/?q=41.8838293,-87.6319503",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lax-gov_offices-01",
+    "name": "Los Angeles City Hall",
+    "type": "gov_offices",
+    "city": "los_angeles",
+    "lat": 34.0536961,
+    "lng": -118.2429212,
+    "address": "200 North Spring Street, Los Angeles, California, 90012",
+    "gmaps_link": "https://maps.google.com/?q=34.0536961,-118.2429212",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "detroit-gov_offices-01",
+    "name": "Coleman A. Young Municipal Center (Detroit City Hall)",
+    "type": "gov_offices",
+    "city": "detroit",
+    "lat": 42.329005,
+    "lng": -83.044521,
+    "address": "2 Woodward Avenue, Detroit, Michigan, 48226",
+    "gmaps_link": "https://maps.google.com/?q=42.3290050,-83.0445210",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "enc-gov_offices-01",
+    "name": "Hotel de Ville de Lyon",
+    "type": "gov_offices",
+    "city": "lyon",
+    "lat": 45.767753,
+    "lng": 4.8362445,
+    "address": "1 Place de la Comedie, 69001 Lyon, France",
+    "gmaps_link": "https://maps.google.com/?q=45.7677530,4.8362445",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mxp-gov_offices-01",
+    "name": "Palazzo delle Aquile (Comune di Palermo)",
+    "type": "gov_offices",
+    "city": "palermo",
+    "lat": 38.1154024,
+    "lng": 13.3620761,
+    "address": "Piazza Pretoria 1, 90133 Palermo, Italy",
+    "gmaps_link": "https://maps.google.com/?q=38.1154024,13.3620761",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "portland_me-gov_offices-01",
+    "name": "Portland City Hall",
+    "type": "gov_offices",
+    "city": "portland_me",
+    "lat": 43.6592404,
+    "lng": -70.2573592,
+    "address": "389 Congress Street, Portland, Maine, 04101",
+    "gmaps_link": "https://maps.google.com/?q=43.6592404,-70.2573592",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bzg-gov_offices-01",
+    "name": "Rathaus Mainz (Mainz City Hall)",
+    "type": "gov_offices",
+    "city": "mainz",
+    "lat": 50.0009065,
+    "lng": 8.2768566,
+    "address": "Jockel-Fuchs-Platz 1, 55116 Mainz, Germany",
+    "gmaps_link": "https://maps.google.com/?q=50.0009065,8.2768566",
+    "added_by": "yakew7"
   }
 ]

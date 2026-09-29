@@ -5234,5 +5234,38 @@
     "address": "Avenida De la Poesia 160, San Borja, Lima, 15021, Peru",
     "gmaps_link": "https://maps.google.com/?q=-12.0877743,-77.0051290",
     "added_by": "yakew7"
+  },
+  {
+    "id": "bfd-library-01",
+    "name": "Bedford Central Library",
+    "type": "library",
+    "city": "bedford",
+    "lat": 52.13625,
+    "lng": -0.4683365,
+    "address": "Harpur Street, Bedford, MK40 1LE, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=52.1362500,-0.4683365",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "yrk-library-01",
+    "name": "York Explore Library and Archive",
+    "type": "library",
+    "city": "york",
+    "lat": 53.9612102,
+    "lng": -1.0859388,
+    "address": "Library Square, York, YO1 7DT, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=53.9612102,-1.0859388",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "sbr-library-01",
+    "name": "Shrewsbury Library",
+    "type": "library",
+    "city": "shrewsbury",
+    "lat": 52.7107118,
+    "lng": -2.7506275,
+    "address": "Castle Gates, Shrewsbury, SY1 2AD, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=52.7107118,-2.7506275",
+    "added_by": "yakew7"
   }
 ]
