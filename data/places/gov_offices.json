@@ -4321,5 +4321,16 @@
     "address": "400 Poplar Avenue, Linwood, New Jersey, 08221",
     "gmaps_link": "https://maps.google.com/?q=39.3535330,-74.5741100",
     "added_by": "yakew7"
+  },
+  {
+    "id": "new_windsor-gov_offices-01",
+    "name": "New Windsor Post Office (USPS)",
+    "type": "gov_offices",
+    "city": "new_windsor",
+    "lat": 39.5415489,
+    "lng": -77.1065179,
+    "address": "204 Maple Avenue, New Windsor, Maryland, 21776",
+    "gmaps_link": "https://maps.google.com/?q=39.5415489,-77.1065179",
+    "added_by": "yakew7"
   }
 ]

@@ -4420,5 +4420,104 @@
     "address": "984 Tuckerton Road, Marlton, New Jersey, 08053",
     "gmaps_link": "https://maps.google.com/?q=39.8832173,-74.8772413",
     "added_by": "yakew7"
+  },
+  {
+    "id": "mechanicsburg-library-01",
+    "name": "Joseph T. Simpson Public Library",
+    "type": "library",
+    "city": "mechanicsburg",
+    "lat": 40.2157588,
+    "lng": -77.0029478,
+    "address": "16 North Walnut Street, Mechanicsburg, Pennsylvania, 17055",
+    "gmaps_link": "https://maps.google.com/?q=40.2157588,-77.0029478",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mendham-library-01",
+    "name": "Mendham Borough Library",
+    "type": "library",
+    "city": "mendham",
+    "lat": 40.7740649,
+    "lng": -74.5996815,
+    "address": "10 Hilltop Road, Mendham, New Jersey, 07945",
+    "gmaps_link": "https://maps.google.com/?q=40.7740649,-74.5996815",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "milford-library-01",
+    "name": "Milford Town Library",
+    "type": "library",
+    "city": "milford",
+    "lat": 42.1423943,
+    "lng": -71.5202551,
+    "address": "80 Spruce Street, Milford, Massachusetts, 01757",
+    "gmaps_link": "https://maps.google.com/?q=42.1423943,-71.5202551",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "monmouth_junction-library-01",
+    "name": "South Brunswick Public Library",
+    "type": "library",
+    "city": "monmouth_junction",
+    "lat": 40.3838665,
+    "lng": -74.530359,
+    "address": "110 Kingston Lane, Monmouth Junction, New Jersey, 08852",
+    "gmaps_link": "https://maps.google.com/?q=40.3838665,-74.5303590",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "montville-library-01",
+    "name": "Montville Township Public Library",
+    "type": "library",
+    "city": "montville",
+    "lat": 40.8922196,
+    "lng": -74.3586536,
+    "address": "90 Horseneck Road, Montville, New Jersey, 07045",
+    "gmaps_link": "https://maps.google.com/?q=40.8922196,-74.3586536",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mt_carmel-library-01",
+    "name": "Mount Carmel Area Public Library",
+    "type": "library",
+    "city": "mt_carmel",
+    "lat": 40.796304,
+    "lng": -76.4132414,
+    "address": "30 South Oak Street, Mount Carmel, Pennsylvania, 17851",
+    "gmaps_link": "https://maps.google.com/?q=40.7963040,-76.4132414",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "north_brunswick-library-01",
+    "name": "North Brunswick Township Library",
+    "type": "library",
+    "city": "north_brunswick",
+    "lat": 40.4681286,
+    "lng": -74.4640737,
+    "address": "880 Hermann Road, North Brunswick, New Jersey, 08902",
+    "gmaps_link": "https://maps.google.com/?q=40.4681286,-74.4640737",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "north_easton-library-01",
+    "name": "Ames Free Library",
+    "type": "library",
+    "city": "north_easton",
+    "lat": 42.0672332,
+    "lng": -71.1052939,
+    "address": "53 Main Street, North Easton, Massachusetts, 02356",
+    "gmaps_link": "https://maps.google.com/?q=42.0672332,-71.1052939",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "north_kingstown-library-01",
+    "name": "North Kingstown Free Library",
+    "type": "library",
+    "city": "north_kingstown",
+    "lat": 41.5702273,
+    "lng": -71.455938,
+    "address": "100 Boone Street, North Kingstown, Rhode Island, 02852",
+    "gmaps_link": "https://maps.google.com/?q=41.5702273,-71.4559380",
+    "added_by": "yakew7"
   }
 ]
