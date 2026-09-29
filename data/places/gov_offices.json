@@ -4629,5 +4629,27 @@
     "address": "Mayaman Street, Diliman, Quezon City, Metro Manila, 1100, Philippines",
     "gmaps_link": "https://maps.google.com/?q=14.6463769,121.0500069",
     "added_by": "yakew7"
+  },
+  {
+    "id": "ohr-gov_offices-01",
+    "name": "Oxford Town Hall",
+    "type": "gov_offices",
+    "city": "oxford",
+    "lat": 51.7513841,
+    "lng": -1.2571096,
+    "address": "St Aldate's, Oxford, OX1 1BX, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=51.7513841,-1.2571096",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "hfx-gov_offices-01",
+    "name": "Halifax City Hall",
+    "type": "gov_offices",
+    "city": "halifax",
+    "lat": 44.6489172,
+    "lng": -63.5753207,
+    "address": "1841 Argyle Street, Halifax, Nova Scotia, B3J 3A5",
+    "gmaps_link": "https://maps.google.com/?q=44.6489172,-63.5753207",
+    "added_by": "yakew7"
   }
 ]

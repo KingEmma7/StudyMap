@@ -5102,5 +5102,93 @@
     "address": "Ffordd Gwynedd, Bangor, Gwynedd, LL57 1DT, United Kingdom",
     "gmaps_link": "https://maps.google.com/?q=53.2274496,-4.1275418",
     "added_by": "yakew7"
+  },
+  {
+    "id": "lme-library-01",
+    "name": "Lincoln Central Library",
+    "type": "library",
+    "city": "lincoln",
+    "lat": 53.229582,
+    "lng": -0.5376848,
+    "address": "Free School Lane, Lincoln, LN2 1EZ, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=53.2295820,-0.5376848",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lgv-library-01",
+    "name": "Biblioteca Salaborsa",
+    "type": "library",
+    "city": "bologna",
+    "lat": 44.494773,
+    "lng": 11.3414234,
+    "address": "Piazza del Nettuno 3, 40124 Bologna, Italy",
+    "gmaps_link": "https://maps.google.com/?q=44.4947730,11.3414234",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "auckland-library-01",
+    "name": "Auckland Central City Library",
+    "type": "library",
+    "city": "auckland",
+    "lat": -36.8516218,
+    "lng": 174.7654792,
+    "address": "44-46 Lorne Street, Auckland Central, Auckland, 1010, New Zealand",
+    "gmaps_link": "https://maps.google.com/?q=-36.8516218,174.7654792",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "dunedin-library-01",
+    "name": "Dunedin Public Libraries",
+    "type": "library",
+    "city": "dunedin",
+    "lat": -45.872754,
+    "lng": 170.5036585,
+    "address": "230 Moray Place, Dunedin, 9016, New Zealand",
+    "gmaps_link": "https://maps.google.com/?q=-45.8727540,170.5036585",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "hobart-library-01",
+    "name": "State Library of Tasmania",
+    "type": "library",
+    "city": "hobart",
+    "lat": -42.8819605,
+    "lng": 147.3247062,
+    "address": "91 Murray Street, Hobart, Tasmania, 7000, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-42.8819605,147.3247062",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "perth-library-01",
+    "name": "State Library of Western Australia",
+    "type": "library",
+    "city": "perth",
+    "lat": -31.9490566,
+    "lng": 115.8605338,
+    "address": "25 Francis Street, Perth, Western Australia, 6000, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-31.9490566,115.8605338",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "adelaide-library-01",
+    "name": "State Library of South Australia",
+    "type": "library",
+    "city": "adelaide",
+    "lat": -34.920497,
+    "lng": 138.6022153,
+    "address": "North Terrace, Adelaide, South Australia, 5000, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-34.9204970,138.6022153",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "darwin-library-01",
+    "name": "Darwin Public Library",
+    "type": "library",
+    "city": "darwin",
+    "lat": -12.4647951,
+    "lng": 130.8456605,
+    "address": "17 Harry Chan Avenue, Darwin City, Northern Territory, 0800, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-12.4647951,130.8456605",
+    "added_by": "yakew7"
   }
 ]
