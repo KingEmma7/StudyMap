@@ -4992,5 +4992,115 @@
     "address": "No. 1, Jalan Raja, 50050 Kuala Lumpur, Malaysia",
     "gmaps_link": "https://maps.google.com/?q=3.1475186,101.6927147",
     "added_by": "yakew7"
+  },
+  {
+    "id": "manila-library-01",
+    "name": "National Library of the Philippines",
+    "type": "library",
+    "city": "manila",
+    "lat": 14.5816021,
+    "lng": 120.9793133,
+    "address": "Kalaw Avenue, Ermita, Manila, Metro Manila, 1000, Philippines",
+    "gmaps_link": "https://maps.google.com/?q=14.5816021,120.9793133",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "dakar-library-01",
+    "name": "Bibliotheque des Archives Nationales du Senegal",
+    "type": "library",
+    "city": "dakar",
+    "lat": 14.6662007,
+    "lng": -17.4329567,
+    "address": "Avenue Leopold Sedar Senghor, Dakar, Senegal",
+    "gmaps_link": "https://maps.google.com/?q=14.6662007,-17.4329567",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "kampala-library-01",
+    "name": "National Library of Uganda",
+    "type": "library",
+    "city": "kampala",
+    "lat": 0.3227131,
+    "lng": 32.5747352,
+    "address": "Plot 50 Buganda Road, Kampala, Uganda",
+    "gmaps_link": "https://maps.google.com/?q=0.3227131,32.5747352",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "dar_es_salaam-library-01",
+    "name": "Tanzania Library Services Board",
+    "type": "library",
+    "city": "dar_es_salaam",
+    "lat": -6.8227532,
+    "lng": 39.2812722,
+    "address": "Bibi Titi Mohamed Road, Dar es Salaam, Tanzania",
+    "gmaps_link": "https://maps.google.com/?q=-6.8227532,39.2812722",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ottawa-library-01",
+    "name": "Ottawa Public Library, Main Branch",
+    "type": "library",
+    "city": "ottawa",
+    "lat": 45.4202912,
+    "lng": -75.6954433,
+    "address": "120 Metcalfe Street, Ottawa, Ontario, K1P 5M2",
+    "gmaps_link": "https://maps.google.com/?q=45.4202912,-75.6954433",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "wellington-library-01",
+    "name": "Te Matapihi ki te Ao Nui / Wellington Central Library",
+    "type": "library",
+    "city": "wellington",
+    "lat": -41.2881864,
+    "lng": 174.7767337,
+    "address": "65 Victoria Street, Wellington, 6011, New Zealand",
+    "gmaps_link": "https://maps.google.com/?q=-41.2881864,174.7767337",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "winnipeg-library-01",
+    "name": "Millennium Library (Winnipeg Public Library)",
+    "type": "library",
+    "city": "winnipeg",
+    "lat": 49.8916868,
+    "lng": -97.1418435,
+    "address": "251 Donald Street, Winnipeg, Manitoba, R3C 3P5",
+    "gmaps_link": "https://maps.google.com/?q=49.8916868,-97.1418435",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "buffalo-library-01",
+    "name": "Buffalo Central Library (Buffalo & Erie County Public Library)",
+    "type": "library",
+    "city": "buffalo",
+    "lat": 42.8854155,
+    "lng": -78.871789,
+    "address": "1 Lafayette Square, Buffalo, New York, 14203",
+    "gmaps_link": "https://maps.google.com/?q=42.8854155,-78.8717890",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "anchorage-library-01",
+    "name": "Z.J. Loussac Public Library",
+    "type": "library",
+    "city": "anchorage",
+    "lat": 61.1871392,
+    "lng": -149.8788783,
+    "address": "3600 Denali Street, Anchorage, Alaska, 99503",
+    "gmaps_link": "https://maps.google.com/?q=61.1871392,-149.8788783",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bnq-library-01",
+    "name": "Bangor Library (Gwynedd Library Service)",
+    "type": "library",
+    "city": "bangor",
+    "lat": 53.2274496,
+    "lng": -4.1275418,
+    "address": "Ffordd Gwynedd, Bangor, Gwynedd, LL57 1DT, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=53.2274496,-4.1275418",
+    "added_by": "yakew7"
   }
 ]
