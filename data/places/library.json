@@ -4783,5 +4783,115 @@
     "address": "1221 North Central Avenue, Phoenix, Arizona, 85004",
     "gmaps_link": "https://maps.google.com/?q=33.4624422,-112.0731695",
     "added_by": "yakew7"
+  },
+  {
+    "id": "milwaukee-library-01",
+    "name": "Milwaukee Public Library, Central Library",
+    "type": "library",
+    "city": "milwaukee",
+    "lat": 43.0395269,
+    "lng": -87.9223791,
+    "address": "814 West Wisconsin Avenue, Milwaukee, Wisconsin, 53233",
+    "gmaps_link": "https://maps.google.com/?q=43.0395269,-87.9223791",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "tucson-library-01",
+    "name": "Joel D. Valdez Main Library",
+    "type": "library",
+    "city": "tucson",
+    "lat": 32.22295,
+    "lng": -110.971498,
+    "address": "101 North Stone Avenue, Tucson, Arizona, 85701",
+    "gmaps_link": "https://maps.google.com/?q=32.2229500,-110.9714980",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "las_vegas-library-01",
+    "name": "Clark County Library",
+    "type": "library",
+    "city": "las_vegas",
+    "lat": 36.114403,
+    "lng": -115.135363,
+    "address": "1401 East Flamingo Road, Las Vegas, Nevada, 89119",
+    "gmaps_link": "https://maps.google.com/?q=36.1144030,-115.1353630",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "charleston_sc-library-01",
+    "name": "Charleston County Public Library, Main Branch",
+    "type": "library",
+    "city": "charleston_sc",
+    "lat": 32.7885495,
+    "lng": -79.9311034,
+    "address": "68 Calhoun Street, Charleston, South Carolina, 29401",
+    "gmaps_link": "https://maps.google.com/?q=32.7885495,-79.9311034",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "birmingham_al-library-01",
+    "name": "Birmingham Public Library, Central Branch",
+    "type": "library",
+    "city": "birmingham_al",
+    "lat": 33.5210211,
+    "lng": -86.8077695,
+    "address": "2100 Park Place, Birmingham, Alabama, 35203",
+    "gmaps_link": "https://maps.google.com/?q=33.5210211,-86.8077695",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "little_rock-library-01",
+    "name": "Central Arkansas Library System, Main Library",
+    "type": "library",
+    "city": "little_rock",
+    "lat": 34.7469932,
+    "lng": -92.2673336,
+    "address": "100 Rock Street, Little Rock, Arkansas, 72201",
+    "gmaps_link": "https://maps.google.com/?q=34.7469932,-92.2673336",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "oklahoma_city-library-01",
+    "name": "Ronald J. Norick Downtown Library",
+    "type": "library",
+    "city": "oklahoma_city",
+    "lat": 35.4685413,
+    "lng": -97.5187326,
+    "address": "300 Park Avenue, Oklahoma City, Oklahoma, 73102",
+    "gmaps_link": "https://maps.google.com/?q=35.4685413,-97.5187326",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "wichita-library-01",
+    "name": "Wichita Public Library, Advanced Learning Library",
+    "type": "library",
+    "city": "wichita",
+    "lat": 37.6869731,
+    "lng": -97.3476638,
+    "address": "711 West 2nd Street North, Wichita, Kansas, 67203",
+    "gmaps_link": "https://maps.google.com/?q=37.6869731,-97.3476638",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "des_moines-library-01",
+    "name": "Des Moines Central Public Library",
+    "type": "library",
+    "city": "des_moines",
+    "lat": 41.5861261,
+    "lng": -93.6311095,
+    "address": "1000 Grand Avenue, Des Moines, Iowa, 50309",
+    "gmaps_link": "https://maps.google.com/?q=41.5861261,-93.6311095",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "cheyenne-library-01",
+    "name": "Laramie County Library",
+    "type": "library",
+    "city": "cheyenne",
+    "lat": 41.137286,
+    "lng": -104.821152,
+    "address": "2200 Pioneer Avenue, Cheyenne, Wyoming, 82001",
+    "gmaps_link": "https://maps.google.com/?q=41.1372860,-104.8211520",
+    "added_by": "yakew7"
   }
 ]
