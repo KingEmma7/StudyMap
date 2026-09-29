@@ -4618,5 +4618,16 @@
     "address": "747 Market Street, Tacoma, Washington, 98402",
     "gmaps_link": "https://maps.google.com/?q=47.2558102,-122.4417274",
     "added_by": "yakew7"
+  },
+  {
+    "id": "quezon_city-gov_offices-01",
+    "name": "Quezon City Hall",
+    "type": "gov_offices",
+    "city": "quezon_city",
+    "lat": 14.6463769,
+    "lng": 121.0500069,
+    "address": "Mayaman Street, Diliman, Quezon City, Metro Manila, 1100, Philippines",
+    "gmaps_link": "https://maps.google.com/?q=14.6463769,121.0500069",
+    "added_by": "yakew7"
   }
 ]

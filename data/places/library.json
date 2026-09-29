@@ -4893,5 +4893,104 @@
     "address": "2200 Pioneer Avenue, Cheyenne, Wyoming, 82001",
     "gmaps_link": "https://maps.google.com/?q=41.1372860,-104.8211520",
     "added_by": "yakew7"
+  },
+  {
+    "id": "victoria-library-01",
+    "name": "Greater Victoria Public Library, Central Branch",
+    "type": "library",
+    "city": "victoria",
+    "lat": 48.4230466,
+    "lng": -123.3641874,
+    "address": "735 Broughton Street, Victoria, British Columbia, V8W 3H2",
+    "gmaps_link": "https://maps.google.com/?q=48.4230466,-123.3641874",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "regina-library-01",
+    "name": "Regina Public Library, Central Branch",
+    "type": "library",
+    "city": "regina",
+    "lat": 50.4484835,
+    "lng": -104.6143429,
+    "address": "2311 12th Avenue, Regina, Saskatchewan, S4P 3Z5",
+    "gmaps_link": "https://maps.google.com/?q=50.4484835,-104.6143429",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ams-library-01",
+    "name": "OBA Oosterdok (Amsterdam Public Library)",
+    "type": "library",
+    "city": "amsterdam",
+    "lat": 52.3762463,
+    "lng": 4.9081983,
+    "address": "Oosterdokskade 143, 1011 DL Amsterdam, Netherlands",
+    "gmaps_link": "https://maps.google.com/?q=52.3762463,4.9081983",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "muc-library-01",
+    "name": "Munchner Stadtbibliothek Gasteig HP8 (interim Central Library)",
+    "type": "library",
+    "city": "munich",
+    "lat": 48.1116811,
+    "lng": 11.5540203,
+    "address": "Hans-Preissinger-Strasse 8, 81379 Munchen, Germany",
+    "gmaps_link": "https://maps.google.com/?q=48.1116811,11.5540203",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "zqi-library-01",
+    "name": "Zentralbibliothek Zurich",
+    "type": "library",
+    "city": "zurich",
+    "lat": 47.3742527,
+    "lng": 8.5453412,
+    "address": "Zahringerplatz 6, 8001 Zurich, Switzerland",
+    "gmaps_link": "https://maps.google.com/?q=47.3742527,8.5453412",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "dub-library-01",
+    "name": "Dublin City Libraries, Central Library (ILAC Centre)",
+    "type": "library",
+    "city": "dublin",
+    "lat": 53.3499682,
+    "lng": -6.2646508,
+    "address": "ILAC Centre, Henry Street, Dublin 1, Ireland",
+    "gmaps_link": "https://maps.google.com/?q=53.3499682,-6.2646508",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "wen-library-01",
+    "name": "Copenhagen Main Library (Hovedbiblioteket / Krystallen)",
+    "type": "library",
+    "city": "copenhagen",
+    "lat": 55.680876,
+    "lng": 12.573653,
+    "address": "Krystalgade 15, 1172 Kobenhavn K, Denmark",
+    "gmaps_link": "https://maps.google.com/?q=55.6808760,12.5736530",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bjo-library-01",
+    "name": "Stockholm Public Library (Stadsbiblioteket)",
+    "type": "library",
+    "city": "stockholm",
+    "lat": 59.3434409,
+    "lng": 18.0551499,
+    "address": "Sveavagen 73, 113 50 Stockholm, Sweden",
+    "gmaps_link": "https://maps.google.com/?q=59.3434409,18.0551499",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "kuala_lumpur-library-01",
+    "name": "Perpustakaan Kuala Lumpur (Kuala Lumpur Library)",
+    "type": "library",
+    "city": "kuala_lumpur",
+    "lat": 3.1475186,
+    "lng": 101.6927147,
+    "address": "No. 1, Jalan Raja, 50050 Kuala Lumpur, Malaysia",
+    "gmaps_link": "https://maps.google.com/?q=3.1475186,101.6927147",
+    "added_by": "yakew7"
   }
 ]
