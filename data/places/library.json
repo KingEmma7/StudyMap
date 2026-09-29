@@ -4596,5 +4596,82 @@
     "address": "107 West Main Street, Plymouth, Pennsylvania, 18651",
     "gmaps_link": "https://maps.google.com/?q=41.2403120,-75.9467791",
     "added_by": "yakew7"
+  },
+  {
+    "id": "quarryville-library-01",
+    "name": "Quarryville Public Library",
+    "type": "library",
+    "city": "quarryville",
+    "lat": 39.8910527,
+    "lng": -76.1749072,
+    "address": "357 Buck Road, Quarryville, Pennsylvania, 17566",
+    "gmaps_link": "https://maps.google.com/?q=39.8910527,-76.1749072",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "rockaway-library-01",
+    "name": "Rockaway Township Free Public Library",
+    "type": "library",
+    "city": "rockaway",
+    "lat": 40.9121198,
+    "lng": -74.531575,
+    "address": "61 Mount Hope Road, Rockaway, New Jersey, 07866",
+    "gmaps_link": "https://maps.google.com/?q=40.9121198,-74.5315750",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "sayre-library-01",
+    "name": "Sayre Public Library",
+    "type": "library",
+    "city": "sayre",
+    "lat": 41.9818517,
+    "lng": -76.5167968,
+    "address": "122 South Elmer Avenue, Sayre, Pennsylvania, 18840",
+    "gmaps_link": "https://maps.google.com/?q=41.9818517,-76.5167968",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "severna_park-library-01",
+    "name": "Anne Arundel County Public Library, Severna Park Community Library",
+    "type": "library",
+    "city": "severna_park",
+    "lat": 39.0727516,
+    "lng": -76.5448028,
+    "address": "45 West McKinsey Road, Severna Park, Maryland, 21146",
+    "gmaps_link": "https://maps.google.com/?q=39.0727516,-76.5448028",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "sewell-library-01",
+    "name": "Margaret E. Heggan Free Public Library",
+    "type": "library",
+    "city": "sewell",
+    "lat": 39.7470839,
+    "lng": -75.1131918,
+    "address": "606 Delsea Drive, Sewell, New Jersey, 08080",
+    "gmaps_link": "https://maps.google.com/?q=39.7470839,-75.1131918",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "south_windsor-library-01",
+    "name": "South Windsor Public Library",
+    "type": "library",
+    "city": "south_windsor",
+    "lat": 41.8287575,
+    "lng": -72.5529169,
+    "address": "1550 Sullivan Avenue, South Windsor, Connecticut, 06074",
+    "gmaps_link": "https://maps.google.com/?q=41.8287575,-72.5529169",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "southington-library-01",
+    "name": "Southington Public Library",
+    "type": "library",
+    "city": "southington",
+    "lat": 41.5958045,
+    "lng": -72.8777262,
+    "address": "255 Main Street, Southington, Connecticut, 06489",
+    "gmaps_link": "https://maps.google.com/?q=41.5958045,-72.8777262",
+    "added_by": "yakew7"
   }
 ]

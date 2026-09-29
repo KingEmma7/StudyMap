@@ -4365,5 +4365,38 @@
     "address": "2657 Route 940, Pocono Summit, Pennsylvania, 18346",
     "gmaps_link": "https://maps.google.com/?q=41.1090984,-75.4042337",
     "added_by": "yakew7"
+  },
+  {
+    "id": "sussex-gov_offices-01",
+    "name": "Sussex Borough Hall",
+    "type": "gov_offices",
+    "city": "sussex",
+    "lat": 41.2081741,
+    "lng": -74.6070852,
+    "address": "2 Main Street, Sussex, New Jersey, 07461",
+    "gmaps_link": "https://maps.google.com/?q=41.2081741,-74.6070852",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "south_easton-gov_offices-01",
+    "name": "South Easton Post Office (USPS)",
+    "type": "gov_offices",
+    "city": "south_easton",
+    "lat": 42.045892,
+    "lng": -71.0802697,
+    "address": "704 Washington Street, South Easton, Massachusetts, 02375",
+    "gmaps_link": "https://maps.google.com/?q=42.0458920,-71.0802697",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "fairless_hills-gov_offices-01",
+    "name": "Falls Township Office",
+    "type": "gov_offices",
+    "city": "fairless_hills",
+    "lat": 40.1822611,
+    "lng": -74.8597518,
+    "address": "188 Lincoln Highway, Fairless Hills, Pennsylvania, 19030",
+    "gmaps_link": "https://maps.google.com/?q=40.1822611,-74.8597518",
+    "added_by": "yakew7"
   }
 ]
