@@ -233,6 +233,20 @@ export const docsNav: DocsNavEntry[] = [
 /** Same entries, index page excluded — the order sidebar links, groups, and the pager all walk. */
 export const docsPages = docsNav.filter((entry) => entry.href !== "/docs");
 
+/**
+ * The docs pages grouped by topic, in `DOCS_GROUPS` order, leaving out any
+ * group with no pages. Both /docs index views (grid and list) render from
+ * this, so they always agree on which groups show and in what order.
+ */
+export function groupDocsByTopic(
+  pages: DocsNavEntry[] = docsPages,
+): { group: DocsGroup; entries: DocsNavEntry[] }[] {
+  return DOCS_GROUPS.map((group) => ({
+    group,
+    entries: pages.filter((entry) => entry.group === group),
+  })).filter(({ entries }) => entries.length > 0);
+}
+
 export function getDocsNavEntry(pathname: string) {
   return docsNav.find((entry) => entry.href === pathname);
 }

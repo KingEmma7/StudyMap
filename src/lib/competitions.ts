@@ -33,43 +33,11 @@ export function formatCompetitionDate(iso: string): string {
   return `${MONTH_NAMES[month - 1]} ${day}, ${year}`;
 }
 
-import artsDesign from "../../data/competitions/arts_design.json";
-import business from "../../data/competitions/business.json";
-import coding from "../../data/competitions/coding.json";
-import creativeWriting from "../../data/competitions/creative_writing.json";
-import debateMun from "../../data/competitions/debate_mun.json";
-import essayWriting from "../../data/competitions/essay_writing.json";
-import filmVideo from "../../data/competitions/film_video.json";
-import finance from "../../data/competitions/finance.json";
-import history from "../../data/competitions/history.json";
-import humanities from "../../data/competitions/humanities.json";
-import interdisciplinary from "../../data/competitions/interdisciplinary.json";
-import mathematics from "../../data/competitions/mathematics.json";
-import research from "../../data/competitions/research.json";
-import scholarship from "../../data/competitions/scholarship.json";
-import stem from "../../data/competitions/stem.json";
+import studyMapConfig from "../../studymap.config";
 
-const ALL_COMPETITIONS: Competition[] = [
-  ...(artsDesign as Competition[]),
-  ...(business as Competition[]),
-  ...(coding as Competition[]),
-  ...(creativeWriting as Competition[]),
-  ...(debateMun as Competition[]),
-  ...(essayWriting as Competition[]),
-  ...(filmVideo as Competition[]),
-  ...(finance as Competition[]),
-  ...(history as Competition[]),
-  ...(humanities as Competition[]),
-  ...(interdisciplinary as Competition[]),
-  ...(mathematics as Competition[]),
-  ...(research as Competition[]),
-  ...(scholarship as Competition[]),
-  ...(stem as Competition[]),
-];
-
-/** Every competition record, sourced from `data/competitions/<category>.json`. */
+/** Every competition record, sourced from `studymap.config.ts` (by default `data/competitions/<category>.json`). */
 export function getCompetitions(): Competition[] {
-  return ALL_COMPETITIONS;
+  return studyMapConfig.competitions;
 }
 
 export interface CompetitionFilters {

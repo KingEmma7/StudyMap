@@ -1,9 +1,9 @@
 "use client";
 
-import * as React from "react";
 import { LocateFixed } from "lucide-react";
 
 import type { LatLng } from "@/lib/geo";
+import { useNearMe } from "@/components/map/use-near-me";
 import { Button } from "@/components/ui/button";
 
 interface NearMeButtonProps {
@@ -12,34 +12,7 @@ interface NearMeButtonProps {
 }
 
 export function NearMeButton({ onLocated, className }: NearMeButtonProps) {
-  const [busy, setBusy] = React.useState(false);
-  const [error, setError] = React.useState<string | null>(null);
-
-  function locate() {
-    if (!navigator.geolocation) {
-      setError("Geolocation is not available in this browser.");
-      return;
-    }
-    setBusy(true);
-    setError(null);
-    navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        setBusy(false);
-        onLocated({ lat: pos.coords.latitude, lng: pos.coords.longitude });
-      },
-      (err) => {
-        setBusy(false);
-        setError(
-          err.code === err.PERMISSION_DENIED
-            ? "Allow location access in your browser settings."
-            : err.code === err.TIMEOUT
-              ? "Location request timed out. Try again."
-              : "Your location could not be determined. Try again.",
-        );
-      },
-      { enableHighAccuracy: true, timeout: 10000 },
-    );
-  }
+  const { busy, error, locate } = useNearMe(onLocated);
 
   return (
     <div className={className}>
