@@ -81,7 +81,9 @@ export function schemaOrgCompetitionType(category: Competition["category"]): str
 /**
  * Build the schema.org JSON-LD graph node for one competition.
  *
- * Only `estimated: false` dates ever reach `startDate`/`endDate` -
+ * Event-only properties (`eventAttendanceMode`, `startDate`, `endDate`) are
+ * written only when the node is an `Event`. Only `estimated: false` dates
+ * ever reach `startDate`/`endDate` -
  * publishing an estimated date as structured data would invite a search
  * engine to present a guess as a fact. When every date on the record is
  * still estimated, `startDate`/`endDate` are omitted entirely rather than
@@ -106,13 +108,18 @@ export function competitionJsonLd(competition: Competition): Record<string, unkn
       name: competition.organizer,
       url: competition.organizer_url,
     },
-    eventAttendanceMode: EVENT_ATTENDANCE_MODES[competition.format],
     isAccessibleForFree: competition.fee.amount === 0,
   };
 
-  if (confirmedDates.length > 0) {
-    node.startDate = confirmedDates[0];
-    node.endDate = confirmedDates[confirmedDates.length - 1];
+  // eventAttendanceMode, startDate and endDate are schema.org Event properties.
+  // An EducationalOccupationalProgram (a scholarship) doesn't have them, so
+  // putting them on it is a type mismatch that structured-data validators flag.
+  if (node["@type"] === "Event") {
+    node.eventAttendanceMode = EVENT_ATTENDANCE_MODES[competition.format];
+    if (confirmedDates.length > 0) {
+      node.startDate = confirmedDates[0];
+      node.endDate = confirmedDates[confirmedDates.length - 1];
+    }
   }
 
   return node;

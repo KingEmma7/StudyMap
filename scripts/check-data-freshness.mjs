@@ -2,6 +2,11 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 import { isRealIsoDate } from "./lib/data-validation.mjs";
+import {
+  isVerificationExpired,
+  verificationExpiry,
+  verificationWindowMonths,
+} from "./lib/verification-window.mjs";
 
 // Directories checked when --data-dir is not given. --data-dir overrides this
 // list with a single directory, which is how tests point the check at a temp
@@ -50,6 +55,8 @@ function cycleHasLapsed(record, today) {
 }
 
 function checkDir(dataDir, today) {
+  // Competition records all share the 6-month window; places depend on their type.
+  const isCompetitionDir = /[\\/]competitions$/.test(dataDir);
   const files = readdirSync(dataDir)
     .filter((file) => file.endsWith(".json"))
     .sort();
@@ -106,6 +113,27 @@ function checkDir(dataDir, today) {
           );
           totalErrors++;
         }
+      }
+
+      // A verification only counts for 12 months (6 for exam centres and competitions).
+      if (record.verified !== undefined && record.verified !== null) {
+        const on = record.verified.on;
+        const months = verificationWindowMonths({
+          type: record.type ?? file.replace(/\.json$/, ""),
+          competition: isCompetitionDir,
+        });
+        if (typeof on !== "string" || !isRealIsoDate(on)) {
+          console.error(
+            `ERROR ${recordLoc}: verified.on must be a real ISO date (YYYY-MM-DD), got "${on}"`,
+          );
+          totalErrors++;
+        } else if (isVerificationExpired(on, months, today)) {
+          console.error(
+            `ERROR ${recordLoc}: verified.on ${on} is past its ${months}-month window (expired ${verificationExpiry(on, months)}); re-verify this record for ${today}`,
+          );
+          totalErrors++;
+        }
+        dated = true;
       }
 
       const lapseReason = cycleHasLapsed(record, today);

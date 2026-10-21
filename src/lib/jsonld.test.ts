@@ -9,6 +9,7 @@ import {
   schemaOrgType,
 } from "@/lib/jsonld";
 import { site } from "@/lib/site";
+import { COMPETITION_CATEGORIES } from "@/lib/types";
 import type { Competition } from "@/lib/types";
 import type { Place } from "@/lib/types";
 
@@ -189,6 +190,51 @@ describe("competitionJsonLd", () => {
     expect(competitionJsonLd(competition({ category: "scholarship" }))["@type"]).toBe(
       "EducationalOccupationalProgram",
     );
+  });
+
+  it("leaves Event-only properties off a scholarship", () => {
+    const node = competitionJsonLd(
+      competition({
+        category: "scholarship",
+        format: "online",
+        dates: [
+          {
+            label: "Application deadline",
+            date: "2027-03-01",
+            type: "deadline",
+            timezone: "UTC",
+            estimated: false,
+            source_url: "https://example.com/apply",
+          },
+        ],
+      }),
+    );
+    expect(node["@type"]).toBe("EducationalOccupationalProgram");
+    expect(node).not.toHaveProperty("eventAttendanceMode");
+    expect(node).not.toHaveProperty("startDate");
+    expect(node).not.toHaveProperty("endDate");
+    // The properties that do belong to any schema.org Thing are still there.
+    expect(node).toMatchObject({
+      name: "Breakthrough Junior Challenge",
+      isAccessibleForFree: true,
+    });
+  });
+
+  it("keeps eventAttendanceMode, startDate and endDate on every other category", () => {
+    for (const category of ["stem", "coding", "essay_writing", "debate_mun"] as const) {
+      const node = competitionJsonLd(competition({ category }));
+      expect(node["@type"], category).toBe("Event");
+      expect(node, category).toHaveProperty("eventAttendanceMode");
+      expect(node, category).toHaveProperty("startDate");
+    }
+  });
+
+  it("only Event nodes carry Event-only properties, whatever the category", () => {
+    for (const category of COMPETITION_CATEGORIES) {
+      const node = competitionJsonLd(competition({ category }));
+      const isEvent = node["@type"] === "Event";
+      expect("eventAttendanceMode" in node, category).toBe(isEvent);
+    }
   });
 
   it("maps in_person and hybrid formats to their own attendance mode", () => {

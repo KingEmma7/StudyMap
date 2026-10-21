@@ -1,9 +1,18 @@
 import { cleanup, fireEvent, render, screen, within } from "@testing-library/react";
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 import { ResultsList } from "@/components/map/results-list";
 
-afterEach(cleanup);
+beforeEach(() => {
+  // The verified badge expires with time, so these tests run on a fixed date.
+  vi.useFakeTimers({ toFake: ["Date"] });
+  vi.setSystemTime(new Date("2026-10-21T12:00:00Z"));
+});
+
+afterEach(() => {
+  cleanup();
+  vi.useRealTimers();
+});
 
 describe("ResultsList empty state", () => {
   it("describes active filters and offers reset and contribution actions", () => {
