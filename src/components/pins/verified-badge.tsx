@@ -1,5 +1,6 @@
 import { BadgeCheck } from "lucide-react";
 
+import { hasCurrentVerification } from "@/lib/verification";
 import type { Place } from "@/lib/types";
 
 /** Human-readable form of the verification date, e.g. "Jun 2026". */
@@ -11,9 +12,13 @@ export function formatVerifiedOn(iso: string): string {
   });
 }
 
-/** Subtle badge for places a contributor re-checked. Absent for unverified places. */
-export function VerifiedBadge({ place }: { place: Place }) {
-  if (!place.verified) return null;
+/**
+ * Subtle badge for places a contributor re-checked. Absent for unverified places and
+ * once the verification is older than its window (12 months, or 6 for exam centres), so
+ * an old check never reads as current. `now` is for tests.
+ */
+export function VerifiedBadge({ place, now }: { place: Place; now?: Date }) {
+  if (!place.verified || !hasCurrentVerification(place, now)) return null;
   return (
     <span
       title={`Verified by ${place.verified.by} · ${place.verified.on}`}

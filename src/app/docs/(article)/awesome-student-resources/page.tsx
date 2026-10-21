@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
-import { fetchAwesomeList } from "@/lib/awesome-list";
+import { fetchAwesomeList, type AwesomeSection } from "@/lib/awesome-list";
+import { AwesomeListUnavailable } from "@/components/docs/awesome-list-unavailable";
 import { AwesomeListBrowser } from "@/components/docs/awesome-list-browser";
 
 export const metadata: Metadata = {
@@ -12,7 +13,18 @@ export const metadata: Metadata = {
 export const revalidate = 86400;
 
 export default async function AwesomeStudentResourcesPage() {
-  const sections = await fetchAwesomeList("awesome-student-resources");
+  let sections: AwesomeSection[];
+  try {
+    sections = await fetchAwesomeList("awesome-student-resources");
+  } catch {
+    // GitHub rate limits, a renamed repo or an outage shouldn't crash the page.
+    return (
+      <AwesomeListUnavailable
+        repoName="awesome-student-resources"
+        repoUrl="https://github.com/StudentSuite/awesome-student-resources"
+      />
+    );
+  }
 
   return (
     <AwesomeListBrowser

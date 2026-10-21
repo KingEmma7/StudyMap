@@ -8,11 +8,11 @@ import { describe, expect, it } from "vitest";
 const SCRIPT = resolve(process.cwd(), "scripts/check-data-freshness.mjs");
 const TODAY = "2026-08-22";
 
-function runFreshness(records: unknown[], today = TODAY) {
+function runFreshness(records: unknown[], today = TODAY, file = "sat_centre.json") {
   const dataDir = mkdtempSync(join(tmpdir(), "studymap-freshness-"));
 
   try {
-    writeFileSync(join(dataDir, "sat_centre.json"), JSON.stringify(records));
+    writeFileSync(join(dataDir, file), JSON.stringify(records));
     return spawnSync(
       process.execPath,
       [SCRIPT, `--data-dir=${dataDir}`, `--today=${today}`],
@@ -113,5 +113,61 @@ describe("data freshness check", () => {
 
     expect(result.status).toBe(0);
     expect(result.stdout).toContain("1 record(s), 0 dated record(s)");
+  });
+
+  describe("verification window", () => {
+    // TODAY is 2026-08-22, so 6 months back is 2026-02-22 and 12 months back is 2025-08-22.
+    it("flags an exam centre verified more than 6 months ago", () => {
+      const result = runFreshness([
+        { id: "old-centre", type: "sat_centre", verified: { by: "a", on: "2026-02-21" } },
+      ]);
+
+      expect(result.status).toBe(1);
+      expect(result.stderr).toContain("id: old-centre");
+      expect(result.stderr).toContain(
+        "verified.on 2026-02-21 is past its 6-month window",
+      );
+    });
+
+    it("accepts an exam centre verified exactly 6 months ago", () => {
+      const result = runFreshness([
+        { id: "centre", type: "sat_centre", verified: { by: "a", on: "2026-02-22" } },
+      ]);
+
+      expect(result.status).toBe(0);
+      expect(result.stdout).toContain("1 record(s), 1 dated record(s)");
+    });
+
+    it("gives every other place type 12 months", () => {
+      const library = (on: string) => [
+        { id: "lib", type: "library", verified: { by: "a", on } },
+      ];
+
+      expect(runFreshness(library("2026-02-21"), TODAY, "library.json").status).toBe(0);
+      expect(runFreshness(library("2025-08-22"), TODAY, "library.json").status).toBe(0);
+      const old = runFreshness(library("2025-08-21"), TODAY, "library.json");
+      expect(old.status).toBe(1);
+      expect(old.stderr).toContain("past its 12-month window (expired 2026-08-21)");
+    });
+
+    it("reads the place type from the file name when the record has none", () => {
+      const record = [{ id: "centre", verified: { by: "a", on: "2026-02-21" } }];
+
+      expect(runFreshness(record, TODAY, "sat_centre.json").status).toBe(1);
+      expect(runFreshness(record, TODAY, "library.json").status).toBe(0);
+    });
+
+    it("flags a verified.on that is not a real date", () => {
+      const result = runFreshness([
+        { id: "typo", type: "library", verified: { by: "a", on: "2026-02-30" } },
+      ]);
+
+      expect(result.status).toBe(1);
+      expect(result.stderr).toContain("verified.on must be a real ISO date");
+    });
+
+    it("ignores records with no verified block", () => {
+      expect(runFreshness([{ id: "plain", type: "sat_centre" }]).status).toBe(0);
+    });
   });
 });
