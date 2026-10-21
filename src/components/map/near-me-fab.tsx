@@ -4,6 +4,7 @@ import * as React from "react";
 import { LocateFixed, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 
+import { useNearMe } from "@/components/map/use-near-me";
 import type { LatLng } from "@/lib/geo";
 import { cn } from "@/lib/utils";
 
@@ -14,37 +15,12 @@ interface NearMeFabProps {
 
 /** Round floating "near me" button for the mobile map, sized for thumb reach. */
 export function NearMeFab({ onLocated, className }: NearMeFabProps) {
-  const [busy, setBusy] = React.useState(false);
-  const [error, setError] = React.useState<string | null>(null);
+  const { busy, error, locate } = useNearMe(onLocated);
 
-  function locate() {
-    if (!navigator.geolocation) {
-      const message = "Geolocation is not available in this browser.";
-      setError(message);
-      toast.error(message);
-      return;
-    }
-    setBusy(true);
-    setError(null);
-    navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        setBusy(false);
-        onLocated({ lat: pos.coords.latitude, lng: pos.coords.longitude });
-      },
-      (err) => {
-        setBusy(false);
-        const message =
-          err.code === err.PERMISSION_DENIED
-            ? "Allow location access in your browser settings."
-            : err.code === err.TIMEOUT
-              ? "Location request timed out. Try again."
-              : "Your location could not be determined. Try again.";
-        setError(message);
-        toast.error(message);
-      },
-      { enableHighAccuracy: true, timeout: 10000 },
-    );
-  }
+  // The floating button has no room for an inline message, so it also toasts.
+  React.useEffect(() => {
+    if (error) toast.error(error);
+  }, [error]);
 
   return (
     <>

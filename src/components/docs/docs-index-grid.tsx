@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { docsPages, DOCS_GROUPS } from "@/lib/docs-nav";
+import { groupDocsByTopic } from "@/lib/docs-nav";
 import { getDocMeta } from "@/lib/docs-meta";
 import { Badge } from "@/components/ui/badge";
 
@@ -16,9 +16,7 @@ import { Badge } from "@/components/ui/badge";
 export function DocsIndexGrid() {
   return (
     <div className="flex flex-col gap-10">
-      {DOCS_GROUPS.map((group) => {
-        const entries = docsPages.filter((entry) => entry.group === group);
-        if (entries.length === 0) return null;
+      {groupDocsByTopic().map(({ group, entries }) => {
         return (
           <div key={group}>
             <p className="kicker mb-3">{group}</p>

@@ -35,6 +35,9 @@ Edit it:
 - `cities`: preferred display order for the city filter — a hint, not an exhaustive list (any
   city present in your data but missing here still shows, just sorted alphabetically after)
 - `places`: swap the sample imports for your own `data/places/*.json` files
+- `competitions`: swap the `data/competitions/*.json` imports for your own, or set it to `[]` if
+  you don't want a competitions catalog (the competitions pages then show an empty list). The
+  record shape is in [`data/competitions/CONTRIBUTING.md`](data/competitions/CONTRIBUTING.md)
 
 The dataset itself follows the schema in [`data/CONTRIBUTING.md`](data/CONTRIBUTING.md): one JSON
 file per place type, one object per place, with `id`, `name`, `type`, `city`, `lat`, `lng`,

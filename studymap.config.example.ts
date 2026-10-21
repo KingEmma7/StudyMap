@@ -7,6 +7,8 @@
  *      with your own data, or start adding real files under data/places/
  *      per CONTRIBUTING.md and import those instead.
  *   3. Set center / defaultZoom / cities to your region.
+ *   4. Optional: list your own competitions under `competitions` (see
+ *      data/competitions/CONTRIBUTING.md), or leave it empty.
  */
 import type { City, Place } from "@/lib/types";
 import type { StudyMapConfig } from "./studymap.config";
@@ -21,6 +23,9 @@ const studyMapConfig: StudyMapConfig = {
   defaultZoom: 12,
   cities,
   places: [...(library as Place[]), ...(bookShop as Place[])],
+  // No sample competitions ship with the example. The competitions pages
+  // show an empty catalog until you add some.
+  competitions: [],
 };
 
 export default studyMapConfig;
