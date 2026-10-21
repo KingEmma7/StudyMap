@@ -78,21 +78,33 @@ that pair is the source of truth, not this file. The `PlaceType` union and
 
 Next.js App Router. Each folder is a route segment.
 
-| Route                       | File                     | Purpose                                               |
-| --------------------------- | ------------------------ | ----------------------------------------------------- |
-| `/`                         | `page.tsx`               | Homepage: hero, feature grid, CTA                     |
-| `/map`                      | `map/page.tsx`           | Full interactive map                                  |
-| `/calendar`                 | `calendar/page.tsx`      | Exam calendar (SAT, IB, IGCSE)                        |
-| `/docs`                     | `docs/page.tsx`          | Docs index linking to guides                          |
-| `/docs/contributing`        |                          | How to add a place via PR                             |
-| `/docs/exam-centres`        |                          | How to use the map for exam centres                   |
-| `/docs/github-student-pack` |                          | GitHub Student Pack guide                             |
-| `/contribute`               | `contribute/page.tsx`    | Contribution hub (add place / bug / question)         |
-| `/about`                    | `about/page.tsx`         | Principles, stats, maintainers                        |
-| `/legal/*`                  |                          | Privacy, terms, disclaimer                            |
-| `/offline`                  | `offline/page.tsx`       | PWA offline fallback                                  |
-| `/login`                    | `login/page.tsx`         | Optional sign-in (Google OAuth, email)                |
-| `/auth/callback`            | `auth/callback/route.ts` | OAuth code exchange (dynamic, not static-export-safe) |
+| Route                         | File                                  | Purpose                                                                                       |
+| ----------------------------- | ------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `/`                           | `page.tsx`                            | Homepage: hero, feature grid, CTA                                                             |
+| `/map`                        | `map/page.tsx`                        | Full interactive map                                                                          |
+| `/calendar`                   | `calendar/page.tsx`                   | Exam calendar (SAT, IB, IGCSE)                                                                |
+| `/docs`                       | `docs/page.tsx`                       | Docs index linking to guides                                                                  |
+| `/docs/contributing`          |                                       | How to add a place via PR                                                                     |
+| `/docs/exam-centres`          |                                       | How to use the map for exam centres                                                           |
+| `/docs/github-student-pack`   |                                       | GitHub Student Pack guide                                                                     |
+| `/docs/*`                     | `docs/(article)/*/page.tsx`           | The other guides, reference pages and synced awesome lists; `lib/docs-nav.ts` lists every one |
+| `/competitions`               | `competitions/page.tsx`               | Browse and filter competitions, as cards or a list                                            |
+| `/competitions/[slug]`        | `competitions/[slug]/page.tsx`        | One competition: dates, fee, format and country tracks                                        |
+| `/competitions/saved`         | `competitions/saved/page.tsx`         | Signed-in saved competitions and the calendar feed link                                       |
+| `/city/[slug]`                | `city/[slug]/page.tsx`                | Landing page for one city: every place in it                                                  |
+| `/account`                    | `account/page.tsx`                    | Signed-in account: saved places, home, calendar events                                        |
+| `/onboarding`                 | `onboarding/page.tsx`                 | First-run questionnaire, shown once after first sign-in                                       |
+| `/contribute`                 | `contribute/page.tsx`                 | Contribution hub (add place / bug / question)                                                 |
+| `/about`                      | `about/page.tsx`                      | Principles, stats, maintainers                                                                |
+| `/legal/*`                    |                                       | Privacy, terms, disclaimer                                                                    |
+| `/offline`                    | `offline/page.tsx`                    | PWA offline fallback                                                                          |
+| `/login`                      | `login/page.tsx`                      | Optional sign-in (Google OAuth, email)                                                        |
+| `/auth/callback`              | `auth/callback/route.ts`              | OAuth code exchange (dynamic, not static-export-safe)                                         |
+| `/api/places`                 | `api/places/route.ts`                 | Public JSON API for places                                                                    |
+| `/api/competitions`           | `api/competitions/route.ts`           | Public JSON API for competitions                                                              |
+| `/api/competitions/saved.ics` | `api/competitions/saved.ics/route.ts` | Calendar feed (ICS) of a user's saved competitions, read with a token                         |
+| `/api/auth/forgot-password`   | `api/auth/forgot-password/route.ts`   | Rate-limit gate for password-reset requests                                                   |
+| `sitemap.xml`, `robots.txt`   | `sitemap.ts`, `robots.ts`             | Generated sitemap and crawl rules                                                             |
 
 `layout.tsx` (root) wraps every page with `Navbar`, `Footer`, and the theme provider.
 
@@ -124,11 +136,25 @@ components/
 │   └── filters.ts            # `PlaceFilters` type
 ├── calendar/
 │   └── personal-event-dialog.tsx  # add/edit/delete a signed-in user's calendar event
+├── competitions/
+│   ├── competitions-browser.tsx   # top-level browse view: filters, sorting, card or list layout
+│   ├── competition-filters.tsx    # subject, format, participation, region, fee, age and deadline filters
+│   ├── filters.ts                 # `CompetitionFilterState` and the deadline window type
+│   ├── competition-card.tsx       # one competition in the browse view
+│   ├── competition-detail.tsx     # the full competition page body
+│   ├── country-track-list.tsx     # per-country eligibility and dates on a competition
+│   ├── deadline-countdown.tsx     # time left until the next date
+│   ├── save-button.tsx            # save or unsave (signed in)
+│   ├── calendar-feed-card.tsx     # the personal calendar feed link on /competitions/saved
+│   └── view-toggle.tsx            # switch between card and list layout
+├── onboarding/
+│   └── onboarding-flow.tsx        # first-run questionnaire (board, field, country, how you found us)
 ├── pins/
 │   └── pin-popup.tsx       # popup on marker click (directions, share, added_by)
 ├── layout/
 │   ├── navbar.tsx          # nav links + sign-in/sign-out
 │   ├── footer.tsx
+│   ├── site-search.tsx     # site-wide search dialog over places, competitions and docs, loaded on first open
 │   ├── page-container.tsx  # max-width wrapper used by most pages
 │   ├── theme-provider.tsx
 │   └── theme-toggle.tsx
@@ -137,6 +163,7 @@ components/
 ├── docs/
 │   ├── docs-header.tsx         # resolves the current /docs route against lib/docs-nav.ts, renders DocsPageHeader
 │   ├── docs-page-header.tsx    # full-bleed graph-paper header band (kicker + H1 + description)
+│   ├── docs-index.tsx          # the /docs index, with a grid and a list view (docs-index-grid.tsx, docs-index-list.tsx)
 │   ├── docs-sidebar.tsx        # DocsDesktopSidebar (persistent, lg+) + DocsMobileNav (Sheet drawer, <lg)
 │   ├── docs-pager.tsx          # prev/next link pair, reads page order from lib/docs-nav.ts
 │   ├── docs-prose.tsx          # typography wrapper for freeform doc paragraphs
@@ -176,6 +203,25 @@ Pure TypeScript modules. No JSX, no React imports. Each file has a single respon
 | `user-places.ts`                           | CRUD for saved places + home location (`user_places`, `user_home` tables)                            |
 | `user-events.ts`                           | CRUD for personal calendar events (`user_events` table)                                              |
 | `supabase/client.ts`, `supabase/server.ts` | Browser and server Supabase clients (`@supabase/ssr`)                                                |
+| `competitions.ts`                          | Reads the competition dataset; `filterCompetitions()`, `nextDate()` and `sortByNextDate()`           |
+| `competitions-api.ts`                      | Contract for `GET /api/competitions`: filtering, validation and pagination, testable without HTTP    |
+| `competitions-share.ts`                    | Encodes and decodes competition filters to and from a shareable URL query                            |
+| `competition-events.ts`                    | Flattens a competition's milestones into calendar-friendly events                                    |
+| `competition-saves.ts`                     | Save, unsave and count saved competitions (`competition_saves`, `competition_stats` tables)          |
+| `calendar-feed.ts`                         | Resolves a calendar-feed token to the competitions that user saved, without exposing who they are    |
+| `ics.ts`                                   | Builds RFC 5545 iCalendar text for calendar feeds                                                    |
+| `user-profile.ts`                          | Onboarding answers (board, field, country, referral source) and their `user_profiles` row            |
+| `search.ts`                                | `searchSite()`: ranks and groups matches across places, competitions and docs for the search dialog  |
+| `places-api.ts`                            | Contract for `GET /api/places`: filtering, validation and pagination                                 |
+| `city-pages.ts`                            | Builds a city landing page's data from the place dataset                                             |
+| `jsonld.ts`                                | schema.org JSON-LD for places and competitions                                                       |
+| `og.ts`, `og-fonts.ts`                     | Data and fonts for the generated Open Graph cards                                                    |
+| `docs-nav.ts`, `docs-meta.ts`              | The list of `/docs` routes, and their build-time metadata (`docs-meta.generated.json`)               |
+| `changelog.ts`                             | Parses `CHANGELOG.md` for the `/docs/changelog` page                                                 |
+| `awesome-list.ts`                          | Fetches and parses the StudentSuite awesome-list READMEs for the `/docs/awesome-*` pages             |
+| `highlight.ts`                             | Server-side syntax highlighting for code blocks (shiki)                                              |
+| `safe-next.ts`                             | Accepts only same-site paths for post-sign-in redirects                                              |
+| `password-reset-rate-limit.ts`             | Counts password-reset attempts per hashed email                                                      |
 
 `types.ts`, `places.ts`, `geo.ts`, `map.ts`, `share.ts`, `exam-dates.ts` have no Supabase dependency
 and no side effects, they're the easiest targets for new unit tests (see `*.test.ts` next to

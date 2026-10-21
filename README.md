@@ -1,6 +1,6 @@
 # StudyMap
 
-A crowdsourced map of student-important places across the Mumbai Metropolitan Region (Mumbai, Thane, Navi Mumbai). Open source, zero setup, free forever.
+A crowdsourced map of student-important places in cities worldwide: libraries, exam centres, airports, government offices and more. Open source, zero setup, free forever.
 
 **Live:** [studyymap.com](https://studyymap.com)
 

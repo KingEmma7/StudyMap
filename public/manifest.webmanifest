@@ -1,7 +1,7 @@
 {
   "name": "StudyMap",
   "short_name": "StudyMap",
-  "description": "Crowdsourced study resource map for students worldwide. Find libraries, exam centres, stationery shops, and more.",
+  "description": "Crowdsourced study resource map for students worldwide. Find libraries, exam centres, airports, government offices, and more.",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait-primary",
@@ -41,7 +41,7 @@
       "sizes": "1200x630",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "StudyMap — resource map for Mumbai"
+      "label": "StudyMap - resource map for students worldwide"
     }
   ],
   "related_applications": [],
