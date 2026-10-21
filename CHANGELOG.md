@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Competitions: a second dataset next to places (`data/competitions/*.json`, validated by `npm run validate:competitions`), with a browse page (`/competitions`) that filters by subject, format, participation, region, fee, age and deadline and can switch between cards and a list, a detail page per competition (`/competitions/[slug]`), saving a competition when signed in (`/competitions/saved`), a personal calendar feed (`/api/competitions/saved.ics`), a public JSON API (`/api/competitions`) and its docs page, and competition dates on the exam calendar.
+- Onboarding: a short first-run questionnaire (`/onboarding`) shown once after first sign-in, with answers stored in a `user_profiles` row.
+- Site search: a search dialog in the navbar that finds places, competitions and docs pages, loaded the first time it is opened so the datasets stay out of every page's initial JavaScript.
+- City landing pages (`/city/[slug]`) and the public places API (`/api/places`).
 - `robots.ts`: allows crawling, points at the sitemap, and keeps `/auth`, `/login`, and the PWA `/offline` fallback out of the index.
 - `app/sitemap.ts` generated from the same `docs-nav.ts` source of truth used for the docs sidebar.
 - README contributors section: an auto-updating avatar grid linked to the GitHub contributors graph.
