@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { cn, isMissingTableError } from "@/lib/utils";
+import { cn, foldText, isMissingTableError } from "@/lib/utils";
 
 describe("isMissingTableError", () => {
   it("is true for PostgREST's schema-cache-miss code (PGRST205)", () => {
@@ -47,5 +47,20 @@ describe("cn", () => {
 
   it("supports conditional objects", () => {
     expect(cn("base", { active: true, hidden: false })).toBe("base active");
+  });
+});
+
+describe("foldText", () => {
+  it("lower-cases and strips accents", () => {
+    expect(foldText("Esenboğa")).toBe("esenboga");
+    expect(foldText("Kraków")).toBe("krakow");
+    expect(foldText("Française")).toBe("francaise");
+  });
+
+  it("folds letters that NFD does not decompose", () => {
+    expect(foldText("Łódź")).toBe("lodz");
+    expect(foldText("Øresund")).toBe("oresund");
+    expect(foldText("Đà Nẵng")).toBe("da nang");
+    expect(foldText("Işık")).toBe("isik");
   });
 });

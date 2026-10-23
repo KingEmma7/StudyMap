@@ -93,6 +93,14 @@ describe("filterPlaces", () => {
   it("returns an empty array when nothing matches", () => {
     expect(filterPlaces(FIXTURE, { query: "does not exist" })).toEqual([]);
   });
+
+  it("matches a query against the place name, ignoring accents", () => {
+    const places = [
+      place({ id: "esb", name: "Esenboğa International Airport", city: "ankara" }),
+    ];
+    expect(filterPlaces(places, { query: "esenboga" }).map((p) => p.id)).toEqual(["esb"]);
+    expect(filterPlaces(places, { query: "Esenboğa" }).map((p) => p.id)).toEqual(["esb"]);
+  });
 });
 
 describe("getCities", () => {
