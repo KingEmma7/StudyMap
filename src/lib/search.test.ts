@@ -103,6 +103,23 @@ describe("searchSite", () => {
     expect(searchSiteTotal(upper)).toBeGreaterThan(0);
   });
 
+  it("ignores accents in the query and the data", () => {
+    const data: SearchSiteData = {
+      ...DATA,
+      places: [
+        place({ id: "krk", name: "Kraków Public Library", city: "krakow" }),
+        place({ id: "fr", name: "Alliance Française de Toronto", city: "toronto" }),
+      ],
+    };
+    const ids = (q: string) =>
+      searchSite(q, data)
+        .find((g) => g.type === "place")
+        ?.results.map((r) => r.id);
+    expect(ids("krakow")).toEqual(["krk"]);
+    expect(ids("francaise")).toEqual(["fr"]);
+    expect(ids("Française")).toEqual(["fr"]);
+  });
+
   it("matches a place by its humanized city", () => {
     const groups = searchSite("thane", DATA);
     const places = groups.find((g) => g.type === "place");

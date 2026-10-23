@@ -1,4 +1,5 @@
 import type { City, Place, PlaceType } from "@/lib/types";
+import { foldText } from "@/lib/utils";
 import studyMapConfig from "../../studymap.config";
 
 /** All public places, sourced from `studymap.config.ts`. */
@@ -10,7 +11,7 @@ export function filterPlaces(
   places: Place[],
   opts: { types?: PlaceType[]; city?: City | null; query?: string },
 ): Place[] {
-  const q = opts.query?.trim().toLowerCase() ?? "";
+  const q = foldText(opts.query?.trim() ?? "");
   return places.filter((place) => {
     if (opts.types && opts.types.length > 0 && !opts.types.includes(place.type)) {
       return false;
@@ -20,7 +21,7 @@ export function filterPlaces(
     }
     if (q) {
       const cityNorm = place.city.replace(/_/g, " ");
-      if (!place.name.toLowerCase().includes(q) && !cityNorm.includes(q)) {
+      if (!foldText(place.name).includes(q) && !cityNorm.includes(q)) {
         return false;
       }
     }

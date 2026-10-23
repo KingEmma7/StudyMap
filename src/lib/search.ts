@@ -1,5 +1,6 @@
 import { humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
 import type { Competition, Place } from "@/lib/types";
+import { foldText } from "@/lib/utils";
 
 /** The one place a doc entry's shape is imported for search, decoupled from `docsNav`'s own type. */
 export interface SearchableDoc {
@@ -43,7 +44,7 @@ export interface SearchSiteOptions {
 const DEFAULT_LIMIT = 5;
 
 function includesQuery(query: string, ...fields: (string | undefined)[]): boolean {
-  return fields.some((field) => !!field && field.toLowerCase().includes(query));
+  return fields.some((field) => !!field && foldText(field).includes(query));
 }
 
 /**
@@ -52,7 +53,7 @@ function includesQuery(query: string, ...fields: (string | undefined)[]): boolea
  * run entirely client-side once the caller has the three datasets in hand
  * (`getPlaces()`, `getCompetitions()`, `docsNav`).
  *
- * Matching is a plain case-insensitive substring test per field (the same
+ * Matching is a plain case- and accent-insensitive substring test per field (the same
  * approach as `filterPlaces` and the awesome-list docs browser) — no fuzzy
  * matching or ranking, since none of the three datasets are large enough to
  * need it and it keeps the behavior easy to reason about.
@@ -65,7 +66,7 @@ export function searchSite(
   data: SearchSiteData,
   opts: SearchSiteOptions = {},
 ): SearchGroup[] {
-  const q = query.trim().toLowerCase();
+  const q = foldText(query.trim());
   if (!q) return [];
   const limit = opts.limit ?? DEFAULT_LIMIT;
 
